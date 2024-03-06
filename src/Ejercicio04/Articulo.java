@@ -47,7 +47,7 @@ public class Articulo {
 	 * @return precio con descuento e IVA
 	 */
 	public float getPVPDescuento(float descuento) {
-		return (this.precio + this.precio * this.IVA) * descuento;
+		return getPVP() * descuento;
 	}
 
 	/**
